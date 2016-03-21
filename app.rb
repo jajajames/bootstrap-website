@@ -24,6 +24,8 @@ get '/our_class' do
   erb :index
 end
 
+
+
 post '/search' do
   starter = case params["search_engine"]
   when "google"
@@ -34,4 +36,9 @@ post '/search' do
     "https://www.google.com/#q="
   end
   redirect starter + params['query']
+end
+
+get '/:user/status/:id' do
+  students = %w(James Matt Seth Kurt Ryder)
+  erb :index, locals: {full_name: students[params['id'].to_i]}
 end
