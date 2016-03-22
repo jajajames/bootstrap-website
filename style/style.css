@@ -1,13 +1,11 @@
 header {
   color: #333;
-  /*padding-top: 120px;
-  padding: 0px;*/
 }
 
 .jumbotron {
-  background-image: url(https://unsplash.it/1440/322);
+  background-image: url(https://unsplash.it/1440/333);
   background:url(https://unsplash.it/1440/302) top center center no-repeat;
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   color: #333;
   width: 100%;
   padding: 0px:
@@ -40,21 +38,11 @@ header {
   filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
-.post {
-  /*background: #cff;*/
-}
-
-.sidebar {
-  /*background-color: #ccc;*/
-}
-
 .post-wrapper {
-  /*background-color: #ffc;*/
   width: 100vw;
 }
 
 footer {
-  /*background-color: #fcf;*/
   width: 100vw;
 }
 
