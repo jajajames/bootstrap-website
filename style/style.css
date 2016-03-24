@@ -3,9 +3,9 @@ header {
 }
 
 .jumbotron {
-  background-image: url(https://unsplash.it/1440/333);
-  background:url(https://unsplash.it/1440/302) top center center no-repeat;
-  background-attachment: fixed;
+  /*background-image: url(https://unsplash.it/1440/333);*/
+  /*background:url(https://unsplash.it/1440/302) top center center no-repeat;*/
+  /*background-attachment: fixed;*/
   color: #333;
   width: 100%;
   padding: 0px:
