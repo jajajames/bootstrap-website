@@ -4,7 +4,7 @@ header {
 
 .jumbotron {
   background-image: url(surf_sup);
-  background-size:cover;
+  background-size: cover;
   /*background:url(https://unsplash.it/1440/302) top center center no-repeat;*/
   background-attachment: fixed;
   color: #333;
@@ -15,7 +15,6 @@ header {
 .navbar img {
   height: 50px;
 }
-
 .navbar a {
   color: #333;
   font-weight: bold;
@@ -24,13 +23,10 @@ header {
   color: #333;
 }
 
-.search-img {
-  height: 1em;
-}
-
 .navbar-default {
+  background: none !important;
   background-color: transparent;
-  border: none;
+  border: none !important;
   position: relative;
   z-index: 1;
 }
