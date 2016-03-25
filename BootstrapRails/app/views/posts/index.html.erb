@@ -1,14 +1,13 @@
-<% @posts.each do |post| %>
 <main class="middle container">
   <div class="row">
     <div class="post col-md-8 left-col">
-      <h1><%= link_to post.title, "posts/" + post.id.to_s %></h1>
+      <h1><%= link_to @post.title, post_path(id: @post.id) %></h1>
       <div class="row">
-        <h5 class="col-sm-3"><a href="#"><%= post.author %></a></h5>
+        <h5 class="col-sm-3"><a href="#"><%= @post.author %></a></h5>
         <!-- http://apidock.com/ruby/DateTime/strftime -->
-        <h5 class="col-sm-9"><%= post.created_at.strftime("Published %F") %></h5>
+        <h5 class="col-sm-9"><%= @post.created_at.strftime("Published %F") %></h5>
       </div>
-      <p><%= simple_format truncate(post.body, length: 600) %></p>
+      <p><%= simple_format @post.body %></p>
       <div class="row share-social">
         <div class="col-md-2">
           <button class="btn btn-primary" type="button" name="button">comments</button>
@@ -40,4 +39,3 @@
   <br>
 <br>
 </main>
-<%end%>
