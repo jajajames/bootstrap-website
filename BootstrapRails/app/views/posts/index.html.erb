@@ -8,10 +8,7 @@
         <!-- http://apidock.com/ruby/DateTime/strftime -->
         <h5 class="col-sm-9"><%= post.created_at.strftime("Published %F") %></h5>
       </div>
-      <p><%= post.body %></p>
-      <blockquote cite="http://nowhere-mania.com">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </blockquote>
+      <p><%= truncate(post.body, length: 999) %></p>
       <div class="row share-social">
         <div class="col-md-2">
           <button class="btn btn-primary" type="button" name="button">comments</button>
