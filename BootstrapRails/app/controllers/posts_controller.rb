@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
-  def index
-    # @most_recent_post
-  end
+def index
+  @posts = Post.all
+end
 
 end
