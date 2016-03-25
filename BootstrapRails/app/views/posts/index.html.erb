@@ -2,7 +2,7 @@
 <main class="middle container">
   <div class="row">
     <div class="post col-md-8 left-col">
-      <h1><%= post.title %></h1>
+      <h1><%= link_to post.title, "posts/" + post.id.to_s %></h1>
       <div class="row">
         <h5 class="col-sm-3"><a href="#"><%= post.author %></a></h5>
         <!-- http://apidock.com/ruby/DateTime/strftime -->
