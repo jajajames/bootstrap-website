@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BootstrapRails</title>
+  <title><%= yield(:title) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -60,25 +60,27 @@
       </div>
       <div class="row lead-imgs">
           <div class="col-md-3 col-sm-3 col-xs-4">
-            <!--img class="lead-img" src="https://unsplash.it/360/220" alt="post"-->
+            <img class="lead-img" src="https://unsplash.it/360/220" alt="post">
             <div class="carousel-caption">
-              <h5>Posto Uno</h5>
+              <%= link_to @posts.first.title, post_path(id: @posts.first.id)%>
             </div>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-4">
-            <!--img class="lead-img" src="https://unsplash.it/360/221" alt="post"-->
+            <img class="lead-img" src="https://unsplash.it/360/221" alt="post">
             <div class="carousel-caption">
-              <h5>Posto Dos</h5>
-            </div>            </div>
+              <%= link_to @posts.second.title, post_path(id: @posts.second.id)%>
+            </div>
+          </div>
           <div class="col-md-3 col-sm-3 col-xs-4">
-            <!--img class="lead-img" src="https://unsplash.it/360/220" alt="post"-->
+            <img class="lead-img" src="https://unsplash.it/360/220" alt="post">
             <div class="carousel-caption">
-              <h5>Posto Tres</h5>
-            </div>            </div>
+              <%= link_to @posts.third.title, post_path(id: @posts.third.id)%>
+            </div>
+            </div>
           <div class="col-md-3 col-sm-3 hidden-xs">
-            <!--img class="lead-img" src="https://unsplash.it/360/221" alt="post"-->
+            <img class="lead-img" src="https://unsplash.it/360/221" alt="post">
             <div class="carousel-caption">
-              <h5>Posto Cuatro</h5>
+              <%= link_to @posts.fourth.title, post_path(id: @posts.fourth.id)%>
             </div>
           </div>
       </div>
