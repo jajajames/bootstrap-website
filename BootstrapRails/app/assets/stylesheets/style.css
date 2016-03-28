@@ -3,9 +3,10 @@ header {
 }
 
 .jumbotron {
-  /*background-image: url(https://unsplash.it/1440/333);*/
+  background-image: url(surf_sup);
+  background-size: cover;
   /*background:url(https://unsplash.it/1440/302) top center center no-repeat;*/
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   color: #333;
   width: 100%;
   padding: 0px:
@@ -22,13 +23,10 @@ header {
   color: #333;
 }
 
-.search-img {
-  height: 1em;
-}
-
 .navbar-default {
+  background: none !important;
   background-color: transparent;
-  border: none;
+  border: none !important;
   position: relative;
   z-index: 1;
 }
