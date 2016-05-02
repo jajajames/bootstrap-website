@@ -24,7 +24,26 @@ get '/our_class' do
   erb :index
 end
 
+get '/sing/song/?:line?' do |line|
+  @song = %Q(Start spreading the news
+  I am leaving today
+  I want to be a part of it
+  New York, New York
 
+  These vagabond shoes
+  Are longing to stray
+  Right through the very heart of it
+  New York, New York
+
+  I want to wake up in a city
+  That doesn't sleep
+  And find I'm king of the hill
+  Top of the heap)
+  unless n.nil?
+    @song = @song.split("\n")[n.to_i].to_s
+  end
+  erb :show
+end
 
 post '/search' do
   starter = case params["search_engine"]
